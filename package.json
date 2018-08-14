@@ -1,0 +1,24 @@
+{
+  "name": "hola_mundo",
+  "version": "1.0.0",
+  "description": "Loggin haiteku",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "lupita islas",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.6.1",
+    "express": "^4.16.3",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.14.6"
+  }
+}

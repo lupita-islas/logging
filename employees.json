@@ -1,0 +1,49 @@
+[
+    {
+        "nombre" : "Sergio",
+        "apellido" : "Vázquez",
+        "user_name" : "user1",
+        "pwd" : "81dc9bdb52d04dc20036dbd8313ed055",
+        "photo" : "http://www.gravatar.com/avatar/? d=identicon"
+    },
+
+    {
+        "nombre" : "Juan",
+        "apellido" : "Gutiérrez",
+        "user_name" : "user2",
+        "pwd" : "3d779cae2d46cf6a8a99a35ba4167977",
+        "photo" : "http://www.gravatar.com/avatar/? d=monsterid"
+    },
+
+    {
+        "nombre" : "Luis",
+        "apellido" : "López",
+        "user_name" : "user3",
+        "pwd" : "bb7946e7d85c81a9e69fee1cea4a087c",
+        "photo" : "http://www.gravatar.com/avatar/? d=wavatar"
+    },
+
+    {
+        "nombre" : "Alejandra",
+        "apellido" : "Martínez",
+        "user_name" : "user4",
+        "pwd" : "98986c005e5def2da341b4e0627d4712",
+        "photo" : "http://www.gravatar.com/avatar/? d=retro"
+    },
+
+    {
+        "nombre" : "Mario",
+        "apellido" : "Aguirre",
+        "user_name" : "user5",
+        "pwd" : "3810b20210601cb47aae3f1380a264d2",
+        "photo" : "http://www.gravatar.com/avatar/? d=404"
+    },
+
+    {
+        "nombre" : "Ana",
+        "apellido" : "García",
+        "user_name" : "user6",
+        "pwd" : "4abe2907e5149b18b63f7e88d5abf475",
+        "photo" : "http://www.gravatar.com/avatar/? d=robohash"
+    }
+]

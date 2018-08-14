@@ -21,22 +21,6 @@ class Login extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
-    /*componentDidMount(){
-        fetch('/api/login')
-            .then(res => res.json())
-            .then(customers => this.setState({customers:customers}, () => console.log("Customer fetched...", customers)));
-    }*/
-
-    /*componentDidUpdate(){
-        console.log(this.state.customers.status);
-        if (this.state.customers.status==="ok"){
-            console.log("todo bien")
-        }
-        else{
-            console.log("todo mal");
-        }
-    }*/
-
     handleClick(event){
         this.setState({click: true})
     }
@@ -79,9 +63,8 @@ class Login extends Component {
     return (
         
             <div className="Login">
-            
               
-                <form onSubmit={this.handleSubmit}> 
+                <form onSubmit={this.handleSubmit} > 
                 <div>
                     <label>
                     Name:

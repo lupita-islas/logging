@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './login.css';
-import { BrowserRouter as Router, Link, NavLink, Redirect, Prompt} from 'react-router-dom';
+import { BrowserRouter as Router,Redirect} from 'react-router-dom';
 import Route from 'react-router-dom/Route';
 
 const User = () => {
@@ -65,10 +65,7 @@ class Login extends Component {
         .then(customers => this.setState({customers:customers}, () => console.log("Customer fetched...", customers)))
         .then (res => {
             if (this.state.customers.status==="ok"){
-                alert('¡Te damos la bienvenida '+this.state.customers.msg.name+' '+this.state.customers.msg.lastname);
-                
-                <Redirect to='/user'/>;
-                
+                alert('¡Te damos la bienvenida '+this.state.customers.msg.name+' '+this.state.customers.msg.lastname+'!');
             }
             else{
                 alert('Error al iniciar sesión ');
@@ -78,12 +75,12 @@ class Login extends Component {
     }
 
   render() {
+
     return (
-        <Router>
+        
             <div className="Login">
-            <Route path="/" exact strict render={
-          () => {
-              return(
+            
+              
                 <form onSubmit={this.handleSubmit}> 
                 <div>
                     <label>
@@ -99,17 +96,10 @@ class Login extends Component {
                     </div>
                 <input type="submit" value="Enviar" />
                 </form>
-              );}}/>
-            
-                <Route path="/user" exact strict render={
-                () => {
-                    return ( <h1>¡Te damos la bienvenida!</h1>);
-                }
-                }/>
+                
             </div>
 
         
-        </Router>
     );
   }
 }
